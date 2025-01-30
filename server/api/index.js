@@ -10,14 +10,14 @@ const errorMiddleware = require("./middlewares/error-middleware")
 const PORT = 5000;
 
 // let's Handle Cors Policy issue
-const corsOptions = {
-    origin:"http://localhost:5173",
-    methods:"GET, POST , PUT , DELETE , PATCH , HEAD",
-    credentials:true,
-}
+// const corsOptions = {
+//     origin:"http://localhost:5173",
+//     methods:"GET, POST , PUT , DELETE , PATCH , HEAD",
+//     credentials:true,
+// }
 
 
-app.use(cors(corsOptions))
+app.use(cors())
 
 
 app.use(express.json())
