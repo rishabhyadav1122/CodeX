@@ -1,0 +1,79 @@
+.container-nav {
+    max-width: 144rem;
+    padding: 4.2rem 2.4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-brand{
+  position: relative;
+}
+
+.logo-brand .navlink{
+  font-size: 2.5rem;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.logo-brand .navlink:hover{
+  color: white;
+}
+
+.logo-brand .navlink::after {
+  content: ''; /* Creates the underline */
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem; /* Adjust the distance below the text or icon */
+  width: 0;
+  height: 0.3rem; /* Height of the underline */
+  background-color: white; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth width transition */
+}
+
+
+.logo-brand .navlink:hover::after {
+  width: 100%;
+}
+
+
+
+ul {
+    display: flex;
+    gap: 3.2rem;
+    list-style: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    position: relative; /* Needed to position the underline */
+}
+
+ul li .navlink {
+    text-decoration: none; /* Removes default underline */
+    color: #646cff; /* Default text or icon color */
+    font-size: 1.9rem; /* Adjust as needed */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+
+ul li .navlink:hover {
+    color: white; /* Changes the text or icon color on hover */
+}
+
+ul li .navlink::after {
+    content: ''; /* Creates the underline */
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem; /* Adjust the distance below the text or icon */
+    width: 0;
+    height: 0.2rem; /* Height of the underline */
+    background-color: white; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+ul li .navlink:hover::after {
+    width: 100%; /* Expands the underline to full width */
+}
+
+
+/* Profile Page Dark Theme Styles */
