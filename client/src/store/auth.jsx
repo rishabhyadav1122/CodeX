@@ -52,7 +52,7 @@ export const AuthProvider = ({children})=>{
     //to fetch services data from backend
     const getServices = async()=>{
         try {
-            const response = await fetch("http://localhost:5000/api/data/service" , {
+            const response = await fetch("https://code-x-sigma.vercel.app/api/data/service" , {
                 method:"GET",
             })
 
