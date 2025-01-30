@@ -12,7 +12,7 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:5000/api/auth/verifyEmail?token=42bb38ffbe4d9b45ecd457a5a4db1d9dc2d5722fa5f5dc2a6b377a4f56290a07
+GET https://code-x-sigma.vercel.app/api/auth/verifyEmail?token=42bb38ffbe4d9b45ecd457a5a4db1d9dc2d5722fa5f5dc2a6b377a4f56290a07
 
 
 
